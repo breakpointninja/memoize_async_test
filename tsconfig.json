@@ -1,0 +1,30 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "incremental": true,
+    "inlineSourceMap": true,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "target": "es2020",
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "newLine": "lf",
+    "noErrorTruncation": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "pretty": true,
+    "strictNullChecks": true,
+    "outDir": "build",
+    "alwaysStrict": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "locale": "en-us",
+    "lib": ["ES2020"]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
