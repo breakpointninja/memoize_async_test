@@ -2,7 +2,9 @@
 The objective of this test is to implement a memoization utility for async js functions. This repository contains all the starter code you might need. The signature of the function is also decided for you. Your only job is to implement the [memoize_async](src/memoize.ts#L37) function in [memoize.ts](src/memoize.ts). You can learn more about memoization from [wikipedia](https://en.wikipedia.org/wiki/Memoization) or try out some [npm libraries](https://www.npmjs.com/package/memoizee)
 
 ### [index.ts](src/index.ts)
-The file contains an example of where memoization might be useful. You can try it out as follows.
+The file contains an example of where memoization might be useful. 
+It shows how memoization might be useful when calculating file hashes multiple times for the same file.
+You can try it out as follows.
 ```bash
 ❯ npm run build-code 
 
@@ -17,15 +19,12 @@ The file contains an example of where memoization might be useful. You can try i
 > memoize-async-test@1.0.0 tsc /home/rahul/workspace/memoize_async_test
 > tsc
 
-❯ node build/index.js
-Calculating file size for src/memoize.ts
-Calculating file size for src/memoize.ts
-Calculating file size for src/index.ts
-[
-  'Z3T/4hdbbiK62RWdfy9ONlrvPZ82b6zXtdU/eHx3Sio=',
-  'Z3T/4hdbbiK62RWdfy9ONlrvPZ82b6zXtdU/eHx3Sio=',
-  '4YODoI7J4U9Jtv/NSt1waf51cCjLal4XGoZ3bwYj9b0='
-]
+❯ node build/index.js 
+Calculating file hash for src/memoize.ts
+Calculating file hash for src/memoize.ts
+Calculating file hash for src/util.ts
+Calculating file hash for src/util.ts
+Calculating file hash for src/index.ts
 done
 ```
 ### [memoize.spec.ts](src/memoize.spec.ts)
